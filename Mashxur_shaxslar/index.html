@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mashxur shaxslar</title>
+	
+	<style>
+		body {
+			margin: 0;
+			font-family: Arial, sans-serif;
+			background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+		.navbar {
+			background: rgba(0,0,0,0.7);
+			color: #fff;
+			padding: 15px 0;
+			display: flex;
+			justify-content: center;
+			gap: 40px;
+			font-size: 18px;
+		}
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			padding: 8px 16px;
+			border-radius: 4px;
+			transition: background 0.2s;
+		}
+		.navbar a:hover {
+			background: #444;
+		}
+		.container {
+			background: rgba(255,255,255,0.85);
+			margin: 40px auto;
+			padding: 30px;
+			border-radius: 12px;
+			max-width: 900px;
+		}
+		h1 {
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-bottom: 30px;
+		}
+		th, td {
+			padding: 12px;
+			border: 1px solid #ccc;
+			text-align: center;
+		}
+		th {
+			background: #eee;
+		}
+		.profile-img {
+			width: 60px;
+			height: 60px;
+			border-radius: 50%;
+			object-fit: cover;
+		}
+		/* Gallery styles */
+		.gallery {
+			display: flex;
+			gap: 20px;
+			justify-content: center;
+			flex-wrap: wrap;
+			margin: 20px 0 40px 0;
+		}
+		.card {
+			display: block;
+			width: 220px;
+			text-align: center;
+			color: inherit;
+			text-decoration: none;
+			border-radius: 8px;
+			overflow: hidden;
+			background: #fff;
+			box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+		}
+		.card img { width: 100%; height: 150px; object-fit: cover; display:block; }
+		.card-title { padding: 12px; font-weight: bold; }
+		/* Modal styles */
+		.modal {
+			display: none;
+			position: fixed;
+			z-index: 1000;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background: rgba(0,0,0,0.7);
+		}
+		.modal-content {
+			background: #fff;
+			margin: 8% auto;
+			padding: 30px;
+			border-radius: 10px;
+			max-width: 500px;
+			position: relative;
+		}
+		.close {
+			position: absolute;
+			top: 10px;
+			right: 20px;
+			font-size: 28px;
+			color: #333;
+			cursor: pointer;
+		}
+		.modal-img {
+			width: 100%;
+			border-radius: 8px;
+			margin-bottom: 15px;
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<a href="asosiy.html">Asosiy qism</a>
+		<a href="rasmlar.html">Rasmlar</a>
+		<a href="#adabiyotlar">Adabiyotlar</a>
+		<a href="#qoshimcha">Qo'shimcha sahifalar</a>
+		<a href="aloqa.html">Aloqa</a>
+	</div>
+	<div class="container">
+		<h1>Mashxur shaxslar</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Ismi</th>
+					<th>Kasbi</th>
+					<th>Batafsil</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Alisher Navoiy</td>
+					<td>Shoir, mutafakkir</td>
+					<td><a href="navoiy.html" target="_blank" rel="noopener noreferrer" style="text-decoration:none; color:#0077cc;">Ko'rish</a></td>
+				</tr>
+				<tr>
+					<td>Amir Temur</td>
+					<td>Sarkarda, davlat arbobi</td>
+					<td><a href="temur.html" target="_blank" rel="noopener noreferrer" style="text-decoration:none; color:#0077cc;">Ko'rish</a></td>
+				</tr>
+				<tr>
+					<td>Ibn Sino</td>
+					<td>Olim, tabib</td>
+					<td><a href="sino.html" target="_blank" rel="noopener noreferrer" style="text-decoration:none; color:#0077cc;">Ko'rish</a></td>
+				</tr>
+			</tbody>
+		</table>	
+
+		<section id="profiles">
+			<article id="navoiy">
+				<h2>Alisher Navoiy</h2>
+				<ol>
+					<li>Asosiy ijodi: turli mavzularda g'azal va dostons'lar yozgan</li>
+					<li>Eng mashhur asari: "Xamsa" — beshta epik dostonlar majmuasi</li>
+					<li>O'zbek adabiy tilini va nasriy-estetik an'analarni rivojlantirishga katta hissa qo'shgan</li>
+				</ol>
+				<ul>
+					<li>Tug'ilgan: 1441 (Hirot/Horasan hududi)</li>
+					<li>Vafot: 1501</li>
+					<li>Kasbi: shoir, davlat arbobi va homiy</li>
+				</ul>
+				<dl>
+					<dt>Tugʻilgan</dt>
+					<dd>1441, Hirot</dd>
+					<dt>Vafot</dt>
+					<dd>1501</dd>
+					<dt>Kasb</dt>
+					<dd>Shoir, publitsist</dd>
+					<dt>Mashhurligi</dt>
+					<dd>Oʻrta asr turkiy adabiyotining yorqin namoʻndasi</dd>
+				</dl>
+			</article>
+
+
+			<article id="temur">
+				<h2>Amir Temur</h2>
+				<ol>
+					<li>Markaziy Osiyoda katta imperiyani birlashtirish va mustahkamlash</li>
+					<li>Harbiy yurishlar va strategik g'alabalar</li>
+					<li>Me'morchilik va madaniyatga homiylik — Samarqandni rivojlantirish</li>
+				</ol>
+				<ul>
+					<li>Tug'ilgan: 1336</li>
+					<li>Vafot: 1405</li>
+					<li>Kasbi: sarkarda, davlat arbobi</li>
+				</ul>
+				<dl>
+					<dt>Tugʻilgan</dt>
+					<dd>1336, Shahrisabz yaqinlari</dd>
+					<dt>Vafot</dt>
+					<dd>1405</dd>
+					<dt>Kasb</dt>
+					<dd>Sarkarda, davlat boshqaruvchisi</dd>
+					<dt>Mashhurligi</dt>
+					<dd>Markaziy Osiyoda kuchli siyosiy va harbiy yetakchi</dd>
+				</dl>
+			</article>
+
+			<article id="ibn-sino">
+				<h2>Ibn Sino</h2>
+				<ol>
+					<li>Ilmiy merosi: tibbiyot va falsafada muhim ishlanmalar</li>
+					<li>Eng mashhur asari: "Al-Qonun fi tibb" (The Canon of Medicine)</li>
+					<li>Falsafiy va ilmiy metodlarni tizimlashtirish</li>
+				</ol>
+				<ul>
+					<li>Tug'ilgan: taxminan 980</li>
+					<li>Vafot: 1037</li>
+					<li>Kasbi: olim, shifokor, falsafa va tibbiyot sohasida muallif</li>
+				</ul>
+				<dl>
+					<dt>Tugʻilgan</dt>
+					<dd>~980, Buxoro yaqinlari</dd>
+					<dt>Vafot</dt>
+					<dd>1037, Xuroson</dd>
+					<dt>Kasb</dt>
+					<dd>Olim, tabib, falsafa olimi</dd>
+					<dt>Mashhurligi</dt>
+					<dd>Evropada bir necha asr davomida tibbiyot ta'limi asoslaridan biri hisoblangan</dd>
+				</dl>
+			</article>
+		</section>
+	</div>	
+</body>
+</html>
+
+		

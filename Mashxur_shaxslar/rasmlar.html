@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasmlar galereyasi</title>
+    <style>
+        body { margin:0; font-family: Arial, sans-serif; background:#f7f7f7; }
+        .navbar { background: rgba(0,0,0,0.7); color:#fff; padding:12px 0; display:flex; justify-content:center; gap:30px; }
+        .navbar a { color:#fff; text-decoration:none; }
+        .container { max-width:1000px; margin:30px auto; padding:20px; }
+        .gallery { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; }
+        .card { display:block; width:220px; text-align:center; text-decoration:none; color:inherit; border-radius:8px; overflow:hidden; background:#fff; box-shadow:0 2px 8px rgba(0,0,0,0.12); transition: transform 0.2s; }
+        .card:hover { transform: scale(1.05); }
+        .card img { width:100%; height:150px; object-fit:cover; display:block; }
+        .card-title { padding:12px; font-weight:bold; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Bosh sahifa</a>
+        <a href="asosiy.html">Asosiy qism</a>
+        <a href="rasmlar.html">Rasmlar</a>
+        <a href="navoiy.html">Navoiy</a>
+        <a href="temur.html">Temur</a>
+        <a href="sino.html">Ibn Sino</a>
+    </div>
+    <div class="container">
+        <section id="rasmlar">
+            <h2 style="text-align:center; margin-top:10px;">Rasmlar galereyasi</h2>
+            <div class="gallery">
+                <a href="navoiy.html" class="card">
+                    <img src="image/AlisherNavoiy.png" alt="Alisher Navoiy" width="200" height="200" style="display:block; margin:0 auto;">
+                    <div class="card-title">Alisher Navoiy</div>
+                </a>
+                <a href="temur.html" class="card">
+                    <img src="image/AmirTemur.png" alt="Amir Temur" width="200" height="200" style="display:block; margin:0 auto;">
+                    <div class="card-title">Amir Temur</div>
+                </a>
+                <a href="sino.html" class="card">
+                    <img src="image/IbnSino.png" alt="Ibn Sino" width="200" height="200" style="display:block; margin:0 auto;">
+                    <div class="card-title">Ibn Sino</div>
+                </a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
